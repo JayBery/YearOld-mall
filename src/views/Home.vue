@@ -84,7 +84,7 @@
     <div class="onePart">
       <img src="../images/partTwo.png" width="100%">  
     </div>
-    <div class="activity">
+    <div class="activity clearfix">
       <div class="act-left">
         <van-count-down :time="time">
           <template v-slot="timeData">
@@ -108,7 +108,7 @@
     </div>
     <div class="todayBest">
       <div class="tb-title">今日最佳<span class="more">查看更多<van-icon name="arrow"  color="#b3b3b3" /></span></div>
-      <div class="row-card">
+      <div class="row-card clearfix">
         <div class="left-item">
           <img src="../images/best.png" class="item-pic">
           <div class="name">营养早餐</div> 
@@ -129,6 +129,69 @@
         </div>
       </div>
     </div>
+    <div class="tab">
+      <van-tabs v-model="active" color="#006be5">
+        <van-tab title="热门推荐">
+          <div class="allThing">
+            <div class="tingRow clearfix">
+              <div class="left">
+                <div class="box">
+                  <img src="../images/shop.png" width="80%" style="max-width: 100%;
+            max-height: 200px;">
+                </div>
+                <div class="theName">正宗新鲜土鸡蛋/40枚</div>
+                <div class="what">"蛋黄饱满,富有弹性"</div>
+                <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+              </div>
+              <div class="right">
+                <img src="../images/shop.png" width="80%">
+                <div class="theName">正宗新鲜土鸡蛋/40枚</div>
+                <div class="what">"蛋黄饱满,富有弹性"</div>
+                <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+              </div>
+            </div>
+          </div>
+          <div class="allThing">
+            <div class="tingRow clearfix">
+              <div class="left">
+                <img src="../images/shop.png" width="80%">
+                <div class="theName">正宗新鲜土鸡蛋/40枚</div>
+                <div class="what">"蛋黄饱满,富有弹性"</div>
+                <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+              </div>
+              <div class="right">
+                <img src="../images/shop.png" width="80%">
+                <div class="theName">正宗新鲜土鸡蛋/40枚</div>
+                <div class="what">"蛋黄饱满,富有弹性"</div>
+                <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+              </div>
+            </div>
+          </div>
+        </van-tab>
+        <van-tab title="水果">
+          <div class="allThing">
+            <div class="tingRow clearfix">
+              <div class="left">
+                <img src="../images/shop.png" width="80%">
+                <div class="theName">正宗新鲜土鸡蛋/40枚</div>
+                <div class="what">"蛋黄饱满,富有弹性"</div>
+                <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+              </div>
+              <div class="right">
+                <img src="../images/shop.png" width="80%">
+                <div class="theName">正宗新鲜土鸡蛋/40枚</div>
+                <div class="what">"蛋黄饱满,富有弹性"</div>
+                <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+              </div>
+            </div>
+          </div>
+        </van-tab>
+        <van-tab title="蔬菜">内容 3</van-tab>
+        <van-tab title="肉禽蛋类">内容 4</van-tab>
+        <van-tab title="水产海鲜">内容 5</van-tab>
+        <van-tab title="粮油调品">内容 6</van-tab>
+      </van-tabs>
+    </div>
     <TabbarFooter></TabbarFooter>
   </div>
 </div>
@@ -146,7 +209,9 @@ import { Swipe, SwipeItem } from 'vant';
 import { Grid, GridItem } from 'vant';
 import { CountDown } from 'vant';
 import { Tag } from 'vant';
+import { Tab, Tabs } from 'vant';
 
+Vue.use(Tab).use(Tabs)
 Vue.use(Tag);
 Vue.use(CountDown);
 Vue.use(Grid).use(GridItem);
@@ -160,7 +225,8 @@ export default {
   data() {
     return {
       value: "",
-      time: 30 * 60 * 60 * 1000
+      time: 30 * 60 * 60 * 1000,
+      active: 0
     }
   },
   components: {
@@ -237,7 +303,7 @@ export default {
 .activity{
   margin: 0 auto;
   width: 96%;
-  height: 11rem;
+  /* height: 11rem; */
 }
 .item {
   display: inline-block;
@@ -253,7 +319,7 @@ export default {
 .act-left{
   border: 1px solid #cccccc;
   width: 48%;
-  height: 10rem;
+  /* height: 10rem; */
   float: left;
   overflow: hidden;
 }
@@ -275,7 +341,7 @@ export default {
 
 .act-rightTop{
   width: 49%;
-  height: 4.95rem;
+  /* height: 4.95rem; */
   float: right;
   border: 1px solid #cccccc;
   text-align: left;
@@ -293,7 +359,8 @@ export default {
 }
 
 .todayBest{
-  height: 13rem;
+  /* height: 13rem; */
+  margin-top: 1rem
 }
 
 .todayBest .tb-title{
@@ -313,7 +380,7 @@ export default {
 }
 
 .left-item{
-  height: 11rem;
+  /* height: 11rem; */
   width: 46%;
   border: 1px solid #dadada;
   margin: .3rem 0 0 .6rem;
@@ -335,6 +402,7 @@ export default {
 .left-item .tag{
   text-align: left;
   margin-left: .3rem;
+  margin-bottom: 1rem;
 }
 
 .left-item .tag .van-tag{
@@ -348,7 +416,7 @@ export default {
 }
 
 .right-item{
-  height: 11rem;
+  /* height: 11rem; */
   width: 46%;
   border: 1px solid #dadada;
   margin: .3rem .3rem 0 0;
@@ -370,6 +438,7 @@ export default {
 .right-item .tag{
   text-align: left;
   margin-left: .3rem;
+  margin-bottom: 1rem;
 }
 
 .right-item .tag .van-tag{
@@ -380,5 +449,62 @@ export default {
   float: right;
   font-size: 2.1rem;
   margin: -1rem .6rem 0 0
+}
+
+.tab{
+  margin-top: 1rem;
+}
+
+.clearfix::after {
+    content:"";
+    display:table;
+    clear: both;
+}
+
+.allThing{
+  background: #e6e6e6;
+}
+
+.left{
+  width: 50%;
+  background: #fff;
+  float: left;
+  padding-top: 1rem;
+}
+
+.right{
+  width: 50%;
+  background: #fff;
+  float: right;
+  padding-top: 1rem;
+}
+
+.theName{
+  text-align: left;
+  padding-left: 1rem;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+}
+
+.what{
+  text-align: left;
+  padding-left: 1rem;
+  color: #808080;
+  font-size: .25rem;
+}
+
+.price{
+  text-align: left;
+  color: #ff0000;
+  padding-left: 1rem;
+  padding-top: .6rem;
+}
+
+.price .van-icon{
+  float: right;
+  font-size: 1.6rem;
+  padding-left: -1rem;
+  margin-right: 1rem;
+  margin-bottom: .6rem;
 }
 </style>
