@@ -135,16 +135,17 @@
           <div class="allThing">
             <div class="tingRow clearfix">
               <div class="left">
-                <div class="box">
-                  <img src="../images/shop.png" width="80%" style="max-width: 100%;
-            max-height: 200px;">
+                <div class="imgDiv">
+                <img src="../images/shop.png" width="80%">
                 </div>
                 <div class="theName">正宗新鲜土鸡蛋/40枚</div>
                 <div class="what">"蛋黄饱满,富有弹性"</div>
                 <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
               </div>
               <div class="right">
-                <img src="../images/shop.png" width="80%">
+                <div class="imgDiv">
+                <img src="../images/shopTwo.png" width="80%">
+                </div>
                 <div class="theName">正宗新鲜土鸡蛋/40枚</div>
                 <div class="what">"蛋黄饱满,富有弹性"</div>
                 <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
@@ -154,13 +155,17 @@
           <div class="allThing">
             <div class="tingRow clearfix">
               <div class="left">
-                <img src="../images/shop.png" width="80%">
+                <div class="imgDiv">
+                <img src="../images/shopThree.png" width="80%">
+                </div>
                 <div class="theName">正宗新鲜土鸡蛋/40枚</div>
                 <div class="what">"蛋黄饱满,富有弹性"</div>
                 <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
               </div>
               <div class="right">
-                <img src="../images/shop.png" width="80%">
+                <div class="imgDiv">
+                <img src="../images/shopFour.png" width="80%">
+                </div>
                 <div class="theName">正宗新鲜土鸡蛋/40枚</div>
                 <div class="what">"蛋黄饱满,富有弹性"</div>
                 <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
@@ -172,13 +177,17 @@
           <div class="allThing">
             <div class="tingRow clearfix">
               <div class="left">
-                <img src="../images/shop.png" width="80%">
+                <div class="imgDiv">
+                <img src="../images/shopThree.png" width="80%">
+                </div>
                 <div class="theName">正宗新鲜土鸡蛋/40枚</div>
                 <div class="what">"蛋黄饱满,富有弹性"</div>
                 <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
               </div>
               <div class="right">
-                <img src="../images/shop.png" width="80%">
+                <div class="imgDiv">
+                <img src="../images/shopFour.png" width="80%">
+                </div>
                 <div class="theName">正宗新鲜土鸡蛋/40枚</div>
                 <div class="what">"蛋黄饱满,富有弹性"</div>
                 <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
@@ -319,6 +328,7 @@ export default {
 .act-left{
   border: 1px solid #cccccc;
   width: 48%;
+  max-height: 160px;
   /* height: 10rem; */
   float: left;
   overflow: hidden;
@@ -341,6 +351,7 @@ export default {
 
 .act-rightTop{
   width: 49%;
+  max-height: 80px;
   /* height: 4.95rem; */
   float: right;
   border: 1px solid #cccccc;
@@ -507,4 +518,11 @@ export default {
   margin-right: 1rem;
   margin-bottom: .6rem;
 }
+.imgDiv{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 10rem;
+}
+
 </style>
