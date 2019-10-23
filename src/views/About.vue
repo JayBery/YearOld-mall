@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <TabbarFooter></TabbarFooter>
+    <TabbarFooter :active= "message"></TabbarFooter>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ import Vue from 'vue';
 export default {
   data() {
     return {
-
+      message: 1
     }
   },
   components: {

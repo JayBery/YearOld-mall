@@ -111,19 +111,21 @@
       <div class="row-card clearfix">
         <div class="left-item">
           <img src="../images/best.png" class="item-pic">
-          <div class="name">营养早餐</div> 
+          <div class="name">营养早餐</div>
+		  <div class="what what1">"在忙也不要忘记吃早餐"</div>
           <div class="tag">
-            <van-tag type="primary">面包</van-tag>
-            <van-tag type="primary">鸡蛋</van-tag>
+            <van-tag type="primary" class = "vanTagBg">面包</van-tag>
+            <van-tag type="primary" class = "vanTagBg">鸡蛋</van-tag>
             <van-icon name="cart-circle-o" color="#0092eb" />
           </div>
         </div>
         <div class="right-item">
           <img src="../images/bestTwo.png" class="item-pic">
           <div class="name">海鲜拉面</div> 
+		  <div class="what what1">"在忙也不要忘记吃早餐"</div>
           <div class="tag">
-            <van-tag type="primary">拉面</van-tag>
-            <van-tag type="primary">鸭蛋</van-tag>
+            <van-tag type="primary" class = "vanTagBg">拉面</van-tag>
+            <van-tag type="primary" class = "vanTagBg">鸭蛋</van-tag>
             <van-icon name="cart-circle-o" color="#0092eb" />
           </div>
         </div>
@@ -201,7 +203,7 @@
         <van-tab title="粮油调品">内容 6</van-tab>
       </van-tabs>
     </div>
-    <TabbarFooter></TabbarFooter>
+    <TabbarFooter :active= "message"></TabbarFooter>
   </div>
 </div>
 </template>
@@ -233,6 +235,7 @@ export default {
   name: 'home',
   data() {
     return {
+      message: 0,
       value: "",
       time: 30 * 60 * 60 * 1000,
       active: 0
@@ -413,17 +416,18 @@ export default {
 .left-item .tag{
   text-align: left;
   margin-left: .3rem;
-  margin-bottom: 1rem;
+  margin-top: 0.3rem;
 }
 
 .left-item .tag .van-tag{
   margin-right: .3rem;
+  margin-top: 0.2rem;
+  color: #1f1e6a;
 }
 
 .left-item .tag .van-icon{
   float: right;
   font-size: 2.1rem;
-  margin: -1rem .6rem 0 0
 }
 
 .right-item{
@@ -449,17 +453,18 @@ export default {
 .right-item .tag{
   text-align: left;
   margin-left: .3rem;
-  margin-bottom: 1rem;
+  margin-top: 0.3rem;
 }
 
 .right-item .tag .van-tag{
   margin-right: .3rem;
+  margin-top: 0.2rem;
+  color: #1f1e6a;
 }
 
 .right-item .tag .van-icon{
   float: right;
   font-size: 2.1rem;
-  margin: -1rem .6rem 0 0
 }
 
 .tab{
@@ -504,6 +509,10 @@ export default {
   font-size: .25rem;
 }
 
+.what1{
+  padding-left: 0.2rem;
+}
+
 .price{
   text-align: left;
   color: #ff0000;
@@ -525,4 +534,7 @@ export default {
   height: 10rem;
 }
 
+.vanTagBg{
+	background-color: #ebf1fd;
+}
 </style>
