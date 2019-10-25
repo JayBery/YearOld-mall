@@ -24,5 +24,10 @@ export default new Router({
       name: 'home',
       component: () => import(/* webpackChunkName: "about" */ './views/Home.vue')
     },
+    {
+      path: '/DoubleEleven',
+      name: 'DoubleEleven',
+      component: () => import(/* webpackChunkName: "about" */ './views/DoubleEleven.vue')
+    },
   ]
 })

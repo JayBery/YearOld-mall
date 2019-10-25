@@ -81,7 +81,7 @@
         </van-grid-item>
       </van-grid>
     </div>
-    <div class="onePart">
+    <div class="onePart" @click="toOne()">
       <img src="../images/partTwo.png" width="100%">  
     </div>
     <div class="activity clearfix">
@@ -246,66 +246,56 @@ export default {
     TabbarFooter
   },
    methods: {
-    
+    toOne(){
+      this.$router.push({path:'/DoubleEleven'})
+    }
   }
 }
 </script>
 
-<style>
+<style scoped>
 
 .page{
-  margin-bottom: 3.5rem
+  margin-bottom: .6rem
 }
 .headGPS{
-  margin: 1rem 0 .2rem 0;
+  margin-top: .1rem;
   font-weight:600;
+  font-size: .16rem;
 }
 
 .headGPS .van-icon-location{
-  font-size: .9rem;
+  font-size: .15rem;
 }
 
 .headGPS .van-icon-arrow-down{
-  font-size: .6rem;
+  font-size: .15rem;
 }
-
-
 
 .swiper {
   width: 92%;
-  margin: .3rem 4% 1rem 4%;
-  /* height: 12rem; */
+  margin: 0 auto;
 }
 
 .swiper .van-swipe{
   width: 100%;
   height: 100%;
-  border-radius: 1rem;
 }
+
 .swiper img {
   width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-.swiper .custom-indicator {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  padding: 2px 5px;
-  font-size: 12px;
-  color: #fff;
-  background: #fff;
+  border-radius: .18em; 
 }
 
 .van-grid{
-  font-size: .12rem;
+  font-size: .1rem;
   color: #595959;
 }
 
 .van-grid img{
-  height: 2.8rem;
-  border-radius:2.8rem;
-  margin-bottom: .3rem;
+  height: .4rem;
+  border-radius:.8rem;
+  margin-bottom: .06rem;
 }
 
 .onePart{
@@ -315,47 +305,41 @@ export default {
 .activity{
   margin: 0 auto;
   width: 96%;
-  /* height: 11rem; */
+  font-size: .16rem;
 }
 .item {
   display: inline-block;
-  width: 22px;
-  /* margin-right: 5px; */
+  width: .2rem;
   color: #fff;
-  font-size: 12px;
+  font-size: .12rem;
   text-align: center;
   background-color: #c82828;
-  border-radius: 4px;
+  border-radius: .02rem;
 }
+
 
 .act-left{
   border: 1px solid #cccccc;
   width: 48%;
-  max-height: 160px;
-  /* height: 10rem; */
+  max-height: 1.6rem;
   float: left;
   overflow: hidden;
 }
 
 .act-left .text{
   color: #595959;
-  margin-right: .5rem;
+  margin-right: .1rem;
 }
 
 .act-left .van-count-down{
   color: #333333;
-  float: left;
-  margin: .1rem 0 .1rem .5rem
-}
-
-.van-count-down .pic{
-  margin-top: .9rem
+  margin: .08rem 0 .1rem .01rem;
+  font-size: .16rem;
 }
 
 .act-rightTop{
   width: 49%;
-  max-height: 80px;
-  /* height: 4.95rem; */
+  max-height: .79rem;
   float: right;
   border: 1px solid #cccccc;
   text-align: left;
@@ -363,8 +347,7 @@ export default {
 }
 
 .act-rightTop span{
-  margin-left: .4rem;
-  /* display: block; */
+  margin-left: .1rem;
 }
 
 .act-rightTop img{
@@ -374,101 +357,109 @@ export default {
 
 .todayBest{
   /* height: 13rem; */
-  margin-top: 1rem
+  margin-top: .1rem
 }
 
 .todayBest .tb-title{
   text-align: left;
   color: #006be5;
-  font-size: 1.2rem;
+  font-size: .2rem;
   font-weight: 600;
-  margin: 0 .4rem .2rem .4rem;
+  margin: 0 .1rem .1rem .1rem;
 }
 
 .todayBest .tb-title .more{
   float: right;
   color: #b3b3b3;
-  font-size: .8rem;
+  font-size: .14rem;
   font-weight: 100;
-  line-height: 1.6rem;
+  line-height: .3rem;
 }
 
 .left-item{
+  font-size: .18rem;
   /* height: 11rem; */
   width: 46%;
   border: 1px solid #dadada;
-  margin: .3rem 0 0 .6rem;
-  border-radius: .6rem;
+  margin: .02rem 0 0 .1rem;
+  border-radius: .1rem;
   box-shadow: 2px 4px 6px #dadada;
   float: left;
 }
 
 .left-item .item-pic{
   width: 94%;
-  margin: .8rem 0 0 0;
+  margin: .2rem 0 0 0;
 }
 
 .left-item .name{
   text-align: left;
-  margin: .5rem 0 .5rem .3rem;
+  margin: .06rem 0 .06rem .1rem;
+  font-size: .16rem;
+  color: #333;
+  font-weight: 600
 }
 
 .left-item .tag{
   text-align: left;
-  margin-left: .3rem;
-  margin-top: 0.3rem;
+  margin-left: .1rem;
+  margin-top: .08rem;
 }
 
 .left-item .tag .van-tag{
-  margin-right: .3rem;
-  margin-top: 0.2rem;
+  margin-right: .1rem;
   color: #1f1e6a;
 }
 
 .left-item .tag .van-icon{
   float: right;
-  font-size: 2.1rem;
+  font-size: .3rem;
+  margin: 0 .1rem .1rem 0;
 }
 
 .right-item{
+  font-size: .18rem;
   /* height: 11rem; */
   width: 46%;
   border: 1px solid #dadada;
-  margin: .3rem .3rem 0 0;
-  border-radius: .6rem;
+  margin: .02rem .1rem 0 0;
+  border-radius: .1rem;
   box-shadow: 2px 4px 6px #dadada;
   float: right;
 }
 
 .right-item .item-pic{
   width: 94%;
-  margin: .8rem 0 0 0;
+  margin: .2rem 0 0 0;
 }
 
 .right-item .name{
   text-align: left;
-  margin: .5rem 0 .5rem .3rem;
+  margin: .06rem 0 .06rem .1rem;
+  font-size: .16rem;
+  color: #333333;
+  font-weight: 600
 }
 
 .right-item .tag{
   text-align: left;
-  margin-left: .3rem;
-  margin-top: 0.3rem;
+  margin-left: .1rem;
+  margin-top: .08rem;
 }
 
 .right-item .tag .van-tag{
-  margin-right: .3rem;
-  margin-top: 0.2rem;
+  margin-right: .1rem;
   color: #1f1e6a;
 }
 
 .right-item .tag .van-icon{
   float: right;
-  font-size: 2.1rem;
+  font-size: .3rem;
+  margin: 0 .1rem .1rem 0;
 }
 
 .tab{
-  margin-top: 1rem;
+  margin-top: .06rem;
 }
 
 .clearfix::after {
@@ -485,53 +476,52 @@ export default {
   width: 50%;
   background: #fff;
   float: left;
-  padding-top: 1rem;
 }
 
 .right{
   width: 50%;
   background: #fff;
   float: right;
-  padding-top: 1rem;
 }
 
 .theName{
   text-align: left;
-  padding-left: 1rem;
-  padding-top: .6rem;
-  padding-bottom: .6rem;
+  padding-left: .1rem;
+  padding-bottom: .1rem;
+  font-size: .15rem;
 }
 
 .what{
   text-align: left;
-  padding-left: 1rem;
+  padding-left: .1rem;
   color: #808080;
-  font-size: .25rem;
+  font-size: .12rem;
 }
 
 .what1{
-  padding-left: 0.2rem;
+  padding-left: 0.1rem;
 }
 
 .price{
   text-align: left;
   color: #ff0000;
-  padding-left: 1rem;
-  padding-top: .6rem;
+  padding-left: .1rem;
+  padding-top: .1rem;
+  font-size: .18rem;
 }
 
 .price .van-icon{
   float: right;
-  font-size: 1.6rem;
-  padding-left: -1rem;
-  margin-right: 1rem;
-  margin-bottom: .6rem;
+  font-size: .3rem;
+  padding-left: -.1rem;
+  margin-right: .1rem;
+  /* margin-bottom: .06rem; */
 }
 .imgDiv{
   justify-content: center;
   display: flex;
   align-items: center;
-  height: 10rem;
+  height: 2rem;
 }
 
 .vanTagBg{
