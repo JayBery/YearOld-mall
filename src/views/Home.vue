@@ -203,7 +203,7 @@
         <van-tab title="粮油调品">内容 6</van-tab>
       </van-tabs>
     </div>
-    <TabbarFooter :active= "message"></TabbarFooter>
+    <TabbarFooter :msg= "message"></TabbarFooter>
   </div>
 </div>
 </template>

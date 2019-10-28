@@ -39,7 +39,6 @@ export default {
 <style scoped>
 	.page{
 		font-size: calc(100vw/3.75);
-		height: 40rem;
 		width: 100%;
 
 	}

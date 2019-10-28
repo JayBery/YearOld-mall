@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <TabbarFooter :active= "message"></TabbarFooter>
+    <TabbarFooter :msg= "message"></TabbarFooter>
   </div>
 </template>
 

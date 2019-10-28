@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div class="bottom" route>
-        <van-tabbar v-model="active" @change="change(active)">
+        <van-tabbar v-model="active" >
             <van-tabbar-item icon="wap-home-o" replace to="/home" active="0">首页</van-tabbar-item>
             <van-tabbar-item icon="label-o" replace to="/about" active="1">分类</van-tabbar-item>
             <van-tabbar-item icon="search">发现</van-tabbar-item>
@@ -21,14 +21,14 @@ Vue.use(Tabbar).use(TabbarItem);
 export default {
     name: 'TabbarFooter',
      props: {
-      active: {
-        type: String,
-        default: ""
+      msg: {
+        type: Number,
+        default: 0
       }
      },
     data() {
         return {
-            active: 0,
+            active:this.msg  //active接收父组件传来的msg值；
         }
     },
     components: {

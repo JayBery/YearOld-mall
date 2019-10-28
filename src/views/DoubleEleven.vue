@@ -38,6 +38,47 @@
               <div class="price" @click="addCart()">￥50.00</div>
             </div>
       </div>
+      <div class="lookMore">
+          <img src="../images/lookMore.png">
+      </div>
+      <div class="qiangShow">
+            <div class="one">
+              <div class="shopName">清扬洗发水</div>
+              <img class="shopImg" src="../images/hot1.png">
+              <div class="price" @click="addCart()">￥159</div>
+            </div>
+            <div class="two">
+              <div class="shopName">蓝月亮洗衣液</div>
+              <img class="shopImg" src="../images/hot2.png">
+              <div class="price" @click="addCart()">￥119</div>
+            </div>
+            <div class="three">
+              <div class="shopName">曼秀雷敦洗面奶</div>
+              <img class="shopImg" src="../images/hot3.png">
+              <div class="price" @click="addCart()">￥29</div>
+            </div>
+            <div class="four">
+              <div class="shopName">坚果大礼包</div>
+              <img class="shopImg" src="../images/hot4.png">
+              <div class="price" @click="addCart()">￥89</div>
+            </div>
+            <div class="five">
+              <div class="shopName">乐事薯片</div>
+              <img class="shopImg" src="../images/hot5.png">
+              <div class="price" @click="addCart()">￥36</div>
+            </div>
+            <div class="six">
+              <div class="shopName">小老板紫菜卷</div>
+              <img class="shopImg" src="../images/hot6.png">
+              <div class="price" @click="addCart()">￥59</div>
+            </div>
+      </div>
+      <div class="lookMore2">
+          <img src="../images/lookMore.png">
+      </div>
+      <div class="bottom">
+          <img src="../images/bottom.png" width="100%">
+      </div>
   </div>
 </template>
 
@@ -69,7 +110,6 @@ export default {
 </script>
 
 <style scoped>
-
 .page{
     background: #9a0104;
 }
@@ -132,83 +172,227 @@ export default {
     padding-right: 0;
 }
 
-.shopImg{
+.showAll .shopImg{
     font-size: .14rem;
     height: .5rem; 
     color: #333333;
     position: absolute;
 }
 
-.shopName{
+.showAll .shopName{
     font-size: .12rem;
     position: absolute;
 }
 
-.price{
+.showAll .price{
     font-size: .14rem;
     color: #fd233c;
     position: absolute;
     height: .4rem;
 }
 
-.one .shopImg{
+.showAll .one .shopImg{
     top: 1.6rem;
     left: .6rem;
 }
 
-.one .shopName{
+.showAll .one .shopName{
     top: 1.36rem;
     right: .6rem;
 }
 
-.one .price{
+.showAll .one .price{
     top: 1.55rem;
     right: .86rem;
 }
 
-.two .shopImg{
+.showAll .two .shopImg{
     top: 2.8rem;
     left: .6rem;
 }
 
-.two .shopName{
+.showAll .two .shopName{
     top: 2.64rem;
     right: .76rem;
 }
 
-.two .price{
-    top: 2.84rem;
+.showAll .two .price{
+    top: 2.81rem;
     right: .86rem;
 }
 
-.three .shopImg{
+.showAll .three .shopImg{
     top: 3.92rem;
     left: .6rem;
 }
 
-.three .shopName{
+.showAll .three .shopName{
     top: 3.85rem;
     right: .6rem;
 }
 
-.three .price{
-    top: 4.05rem;
+.showAll .three .price{
+    top: 4.04rem;
     right: .86rem;
 }
 
-.four .shopImg{
+.showAll .four .shopImg{
     top: 5.2rem;
     left: .6rem;
 }
 
-.four .shopName{
+.showAll .four .shopName{
     top: 5rem;
     right: .68rem;
 }
 
-.four .price{
+.showAll .four .price{
     top: 5.2rem;
     right: .86rem;
 }
 
+
+.lookMore{
+    margin-top: -.62rem;
+}
+.lookMore2{
+    margin-top: -.75rem;
+}
+
+.lookMore img{
+    width: 88%;
+}
+.lookMore2 img{
+    width: 88%;
+}
+
+.qiangShow{
+    position: relative;
+    background-image: url(../images/qiangShow.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin:0 auto;
+}
+
+.qiangShow::after {
+    content: "";
+    display: block;
+    /*这里的padding =  height / width*/
+    padding:58%;
+    padding-right: 0;
+}
+
+
+.qiangShow .shopImg{
+    font-size: .14rem;
+    height: .8rem; 
+    position: absolute;
+}
+
+.qiangShow .shopName{
+    font-size: .12rem;
+    position: absolute;
+    color: #ffffff;
+}
+
+.qiangShow .price{
+    font-size: .14rem;
+    color: #fefefe;
+    position: absolute;
+    width: 1rem;
+    text-align: left;
+}
+
+.qiangShow .one .shopName{
+    top: .17rem;
+    left: .65rem;
+}
+
+.qiangShow .one .shopImg{
+    top: .85rem;
+    left: .4rem;
+}
+
+.qiangShow .one .price{
+    top: 1.78rem;
+    left: .24rem;
+}
+
+.qiangShow .two .shopName{
+    top: .17rem;
+    left: 1.5rem;
+}
+
+.qiangShow .two .shopImg{
+    top: .85rem;
+    left: 1.4rem;
+}
+
+.qiangShow .two .price{
+    top: 1.78rem;
+    left: 1.36rem;
+}
+
+.qiangShow .three .shopName{
+    top: .17rem;
+    left: 2.37rem;
+}
+
+.qiangShow .three .shopImg{
+    top: .85rem;
+    left: 2.5rem;
+}
+
+.qiangShow .three .price{
+    top: 1.78rem;
+    left: 2.5rem;
+}
+
+.qiangShow .four .shopName{
+    top: 2.34rem;
+    left: .6rem;
+}
+
+.qiangShow .four .shopImg{
+    top: 3rem;
+    left: .4rem;
+}
+
+.qiangShow .four .price{
+    top: 3.95rem;
+    left: .28rem;
+}
+
+.qiangShow .five .shopName{
+    top: 2.34rem;
+    left: 1.6rem;
+}
+
+.qiangShow .five .shopImg{
+    top: 3rem;
+    left: 1.48rem;
+}
+
+.qiangShow .five .price{
+    top: 3.95rem;
+    left: 1.38rem;
+}
+
+.qiangShow .six .shopName{
+    top: 2.34rem;
+    left: 2.44rem;
+}
+
+.qiangShow .six .shopImg{
+    top: 3rem;
+    left: 2.56rem;
+}
+
+.qiangShow .six .price{
+    top: 3.95rem;
+    left: 2.49rem;
+}
+.bottom{
+    display: flex;
+}
 </style>
