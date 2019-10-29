@@ -42,5 +42,13 @@ export default {
 }
 </script>
 
-<style scoped lang="stylus">
+<style scoped>
+.van-tabbar{
+    height: .5rem;
+}
+
+.van-tabbar >>> .van-tabbar-item .van-tabbar-item__icon{
+    font-size: .18rem;
+    margin-bottom: .05rem;
+}
 </style>

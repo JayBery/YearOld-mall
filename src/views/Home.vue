@@ -182,25 +182,209 @@
                 <div class="imgDiv">
                 <img src="../images/shopThree.png" width="80%">
                 </div>
-                <div class="theName">正宗新鲜土鸡蛋/40枚</div>
+                <div class="theName">新鲜樱桃/斤</div>
                 <div class="what">"蛋黄饱满,富有弹性"</div>
                 <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
               </div>
               <div class="right">
                 <div class="imgDiv">
-                <img src="../images/shopFour.png" width="80%">
+                <img src="../images/shopgrape.jpg" width="80%">
                 </div>
-                <div class="theName">正宗新鲜土鸡蛋/40枚</div>
+                <div class="theName">新鲜葡萄/斤</div>
                 <div class="what">"蛋黄饱满,富有弹性"</div>
                 <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
               </div>
             </div>
           </div>
+		  <div class="allThing">
+		    <div class="tingRow clearfix">
+		      <div class="left">
+		        <div class="imgDiv">
+		        <img src="../images/shopMangosteen.jpg" width="80%">
+		        </div>
+		        <div class="theName">新鲜山竹/斤</div>
+		        <div class="what">"蛋黄饱满,富有弹性"</div>
+		        <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+		      </div>
+		      <div class="right">
+		        <div class="imgDiv">
+		        <img src="../images/shopApple.jpg" width="80%">
+		        </div>
+		        <div class="theName">新鲜苹果/斤</div>
+		        <div class="what">"蛋黄饱满,富有弹性"</div>
+		        <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+		      </div>
+		    </div>
+		  </div>
         </van-tab>
-        <van-tab title="蔬菜">内容 3</van-tab>
-        <van-tab title="肉禽蛋类">内容 4</van-tab>
-        <van-tab title="水产海鲜">内容 5</van-tab>
-        <van-tab title="粮油调品">内容 6</van-tab>
+        <van-tab title="蔬菜">
+			<div class="allThing">
+			  <div class="tingRow clearfix">
+			    <div class="left">
+			      <div class="imgDiv">
+			      <img src="../images/shopVegetables.jpg" width="80%">
+			      </div>
+			      <div class="theName">新鲜蔬菜/斤</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			    <div class="right">
+			      <div class="imgDiv">
+			      <img src="../images/shopVegetables1.jpg" width="80%">
+			      </div>
+			      <div class="theName">新鲜蔬菜/斤</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			  </div>
+			</div>
+			<div class="allThing">
+			  <div class="tingRow clearfix">
+			    <div class="left">
+			      <div class="imgDiv">
+			      <img src="../images/shopVegetables.jpg" width="80%">
+			      </div>
+			      <div class="theName">新鲜蔬菜/斤</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			    <div class="right">
+			      <div class="imgDiv">
+			      <img src="../images/shopVegetables1.jpg" width="80%">
+			      </div>
+			      <div class="theName">新鲜蔬菜/斤</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			  </div>
+			</div>
+		</van-tab>
+        <van-tab title="肉禽蛋类">
+			<div class="allThing">
+			  <div class="tingRow clearfix">
+			    <div class="left">
+			      <div class="imgDiv">
+			      <img src="../images/shopChicken.jpg" width="80%">
+			      </div>
+			      <div class="theName">清远土鸡/斤</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			    <div class="right">
+			      <div class="imgDiv">
+			      <img src="../images/shopDuck.png" width="80%">
+			      </div>
+			      <div class="theName">陕西走地鸭/斤</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			  </div>
+			</div>
+			<div class="allThing">
+			  <div class="tingRow clearfix">
+			    <div class="left">
+			      <div class="imgDiv">
+			      <img src="../images/shopEgg.jpg" width="80%">
+			      </div>
+			      <div class="theName">有机优质蛋/斤</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			    <div class="right">
+			      <div class="imgDiv">
+			      <img src="../images/shopBeef.jpg" width="80%">
+			      </div>
+			      <div class="theName">新鲜牛肉/斤</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			  </div>
+			</div>
+		</van-tab>
+        <van-tab title="水产海鲜">
+			<div class="allThing">
+			  <div class="tingRow clearfix">
+			    <div class="left">
+			      <div class="imgDiv">
+			      <img src="../images/shopLobster.jpg" width="80%">
+			      </div>
+			      <div class="theName">美国波士顿龙虾/只</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			    <div class="right">
+			      <div class="imgDiv">
+			      <img src="../images/shopCrab.jpg" width="80%">
+			      </div>
+			      <div class="theName">无为县大闸蟹/斤</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			  </div>
+			</div>
+			<div class="allThing">
+			  <div class="tingRow clearfix">
+			    <div class="left">
+			      <div class="imgDiv">
+			      <img src="../images/shopAbalone.jpg" width="80%">
+			      </div>
+			      <div class="theName">大连鲍鱼/只</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			    <div class="right">
+			      <div class="imgDiv">
+			      <img src="../images/shopHairtail.jpg" width="80%">
+			      </div>
+			      <div class="theName">深海带鱼/斤</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			  </div>
+			</div>
+		</van-tab>
+        <van-tab title="粮油调品">
+			<div class="allThing">
+			  <div class="tingRow clearfix">
+			    <div class="left">
+			      <div class="imgDiv">
+			      <img src="../images/shopThaiRice.jpg" width="80%">
+			      </div>
+			      <div class="theName">泰国香米/袋</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			    <div class="right">
+			      <div class="imgDiv">
+			      <img src="../images/shopNortheastRice.jpg" width="80%">
+			      </div>
+			      <div class="theName">东北大米/袋</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			  </div>
+			</div>
+			<div class="allThing">
+			  <div class="tingRow clearfix">
+			    <div class="left">
+			      <div class="imgDiv">
+			      <img src="../images/shopJLYOil.jpeg" width="80%">
+			      </div>
+			      <div class="theName">金龙鱼玉米油/桶</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			    <div class="right">
+			      <div class="imgDiv">
+			      <img src="../images/shopOliveoil.jpg" width="80%">
+			      </div>
+			      <div class="theName">橄榄油/桶</div>
+			      <div class="what">"蛋黄饱满,富有弹性"</div>
+			      <div class="price">32.99<van-icon name="cart-circle-o" color="#0092eb" /></div>
+			    </div>
+			  </div>
+			</div>
+		</van-tab>
       </van-tabs>
     </div>
     <TabbarFooter :msg= "message"></TabbarFooter>
@@ -527,4 +711,13 @@ export default {
 .vanTagBg{
 	background-color: #ebf1fd;
 }
+
+.tag .van-tag{
+  font-size: .1rem;
+}
+
+.tab >>> .van-tab{
+  font-size: .14rem;
+}
+
 </style>
