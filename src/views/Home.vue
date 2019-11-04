@@ -40,43 +40,43 @@
           text="文字"
         /> -->
         <van-grid-item>
-          <img src="https://p1.meituan.net/jungle/8b5e1702d4145ccf058ba5fb31008c5310912.png" />
+          <img src="../images/icon1.png" />
           美食
         </van-grid-item>
         <van-grid-item>
-          <img src="https://p0.meituan.net/jungle/45ff2f098a20a77122bff8385192f0ec10547.png" />
+          <img src="../images/icon2.png" />
           超市
         </van-grid-item>
         <van-grid-item>
-          <img src="https://p1.meituan.net/jungle/12a9834827909fa55f54bce96e67470711250.png" />
+          <img src="../images/icon3.png" />
           生鲜果蔬
         </van-grid-item>
         <van-grid-item>
-          <img src="https://p1.meituan.net/jungle/da9181f93dd2e11c5d74cf685470408f10016.png" />
+          <img src="../images/icon4.png" />
           专送
         </van-grid-item>
         <van-grid-item>
-          <img src="https://p1.meituan.net/jungle/83bfbcf07221cb1ccbcd9114e81ec7ac9209.png" />
+          <img src="../images/icon5.png" />
           快餐简餐
         </van-grid-item>
         <van-grid-item>
-          <img src="https://p1.meituan.net/jungle/a2a306c5467aba7fac8d7410d161f8db9364.png" />
+          <img src="../images/icon6.png" />
           下午茶
         </van-grid-item>
         <van-grid-item>
-          <img src="https://p0.meituan.net/jungle/58b60a312cf86f3a3afc4c96ff0e53438774.png" />
+          <img src="../images/icon7.png" />
           汉堡披萨
         </van-grid-item>
         <van-grid-item>
-          <img src="https://p0.meituan.net/jungle/2eee7747fd143249b100b9fa5ee5e31d9873.png" />
+          <img src="../images/icon8.png" />
           家常菜
         </van-grid-item>
         <van-grid-item>
-          <img src="https://p0.meituan.net/jungle/2ec76f8f4f21a4ec163adc7fccfa1a399428.png" />
+          <img src="../images/icon9.png" />
           小吃馆
         </van-grid-item>
         <van-grid-item>
-          <img src="https://p1.meituan.net/jungle/dfd03fd91f640682c16179ba85837f739679.png" />
+          <img src="../images/icon10.png" />
           鲜花蛋糕
         </van-grid-item>
       </van-grid>
@@ -477,8 +477,8 @@ export default {
 }
 
 .van-grid img{
-  height: .4rem;
-  border-radius:.8rem;
+  height: .49rem;
+  border-radius:10%;
   margin-bottom: .06rem;
 }
 

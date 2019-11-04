@@ -1,13 +1,15 @@
 <template>
   <div class="page">
       <img src="../images/elevenHaed.png" alt="" width="100%">
+      <div class="goIndex" @click="goIndex()">返回首页</div>
       <div class="head">
           <!-- <img src="../images/light.png" alt="" width="100%"> -->
           <van-count-down :time="time" class="jishi">
           <template v-slot="timeData">
-            <span class="item">{{ timeData.hours }}</span>天
-            <span class="item">{{ timeData.minutes }}</span>时
-            <span class="item">{{ timeData.seconds }}</span>分
+            <span class="item">{{ timeData.days }}</span>天
+            <span class="item">{{ timeData.hours }}</span>时
+            <span class="item">{{ timeData.minutes }}</span>分
+            <span class="item">{{ timeData.seconds }}</span>秒
           </template>
         </van-count-down>
       </div>
@@ -92,8 +94,12 @@ Vue.use(CountDown);
 export default {
   data() {
     return {
-        time: 30 * 60 * 60 * 1000,
+        time: 0,
     }
+  },
+  created:function(){
+    var timestamp = (new Date()).getTime();
+    this.interval(timestamp,1573401600000)
   },
   components: {
 
@@ -104,6 +110,15 @@ export default {
       },
       addCart(){
         Toast('已加入购物车');
+      },
+      goIndex(){
+          this.$router.push({path: '/Home'})
+      },
+      interval(faultDate,completeTime){
+        var stime = Date.parse(new Date(faultDate));
+        var etime = Date.parse(new Date(completeTime));
+        var usedTime = etime - stime;  //两个时间戳相差的毫秒数
+        this.time = usedTime;
       }
   },
 }
@@ -111,7 +126,15 @@ export default {
 
 <style scoped>
 .page{
-    background: #9a0104;
+    background: #8c0208;
+}
+
+.goIndex{
+    font-size: .16rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    top: -.3rem;
 }
 
 .head{
